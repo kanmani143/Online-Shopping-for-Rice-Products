@@ -1,0 +1,272 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMaster.Master.cs" Inherits="OSCRP.MainMaster" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="ajax" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+        <script src="js/jquery-1.7.min.js" type="text/javascript">
+            
+        </script>
+
+
+       <script language="javascript" src="Calendar.js" type="text/javascript"></script>
+    <link href="Calendar.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+
+ <script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.dynDateTime.min.js" type="text/javascript"></script>
+    <script src="js/calendar-en.min.js" type="text/javascript"></script>
+    <link href="css/calendar-blue.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" >
+
+        //var prntData = document.getElementById('<%=Login.ClientID%>');
+    
+        function Popup(url) {
+            url = "frmImageWindow.aspx?ImageUrl=" + url;
+            window.open(url, "Image Window", "status = 1, height = 390, width = 457, resizable = 0")
+        }
+        function CheckLogin(obj)
+        {
+            //alert(Login.value);
+            //var l1 = Login.value;
+            alert("Login");
+
+            try
+            {
+<%--                var lgn = document.getElementById(obj);
+                alert(lgn.innerHTML);--%>
+                
+                //if (l1.value == "Logout") {
+                //    var confirmLogout = confirm("Are you sure you want to logout?");
+                //    if (confirm)
+                //        return true;
+                //    else
+                //        return false;
+                //}
+                //else
+                return true;
+            }
+            catch (err)
+            {
+                alert(err.message);
+            }
+        }
+    </script>
+        
+    <style type="text/css">
+            .FixedHeader {
+            position: fixed;
+            font-weight: bold;
+        }     
+       
+
+    /* This will only target checkboxes within your report grid */
+    .reportgrid input[type=checkbox] { height: 40px; width: 40px;}
+    
+    /* This will only target checkboxes within your report grid (with class sillygrid) */
+    .sillygrid input[type=checkbox] { height: 40px; width: 40px; }
+        .auto-style1 {
+            height: 203px;
+        }
+        .auto-style3 {
+            position: relative;
+            float: left;
+            width: 550px;
+            top: 0px;
+            right: -50px;
+            height: 188px;
+        }
+    </style>  
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" >
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+</asp:ScriptManager>
+
+
+
+        <div style="clear: both;">
+
+            <%--<div style="position: relative; float: left; width: 300px;">--%>
+                <div style="text-align:left;" class="auto-style3" >
+                <table style="width: 100%;" >
+                    <tr>
+              
+                        <td class="auto-style1" >
+                          <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Images/HaiSiabanner6.jpg" 
+                                Height="175px"  Width ="1175px"/> 
+                                
+                        </td>
+                       
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+    <div style="clear: both;">
+            <div style=" float: left; width: 900px; top: 0px; right: 0px; text-align:right; height: 26px;">
+<%--                 <asp:Label ID="lblCustomer" runat="server" Text="User" 
+                     Width="800px" ForeColor ="Black" Font-Size="X-Large" Font-Bold="true"  ></asp:Label>
+                <br />
+                <br />--%>
+                <table style="width: 100%;" >
+                    <tr>
+                        <td  align="center">
+                           <%-- <p><span style="font-size:small;color:#cc6699;font-weight:bold" >Welcome </span><span>--%>
+<asp:Label ID="lblUserName" runat="server" Text=""  Height="25px"  Width ="750px" Font-Bold="true" Font-Italic="true" Font-Size="Small"
+                                                        Font-Names="viladimir script" ForeColor="Red" Visible="true"></asp:Label>
+            
+                        </td>
+                    </tr>
+                    </table>
+                </div>
+        </div>
+        <br />
+        <div style="clear: both;">
+            <div style=" float: right; width: 900px; top: 0px; right: 0px; text-align:right; height: 26px;">
+<%--                 <asp:Label ID="lblCustomer" runat="server" Text="User" 
+                     Width="800px" ForeColor ="Black" Font-Size="X-Large" Font-Bold="true"  ></asp:Label>
+                <br />
+                <br />--%>
+                <table style="width: 100%;" >
+<%--                    <tr>
+                        <td colspan="3" align="left">
+                            <p><span style="font-size:small;color:#cc6699;font-weight:bold" >Welcome </span><span>
+<asp:Label ID="lblUserName" runat="server" Text=""  Height="25px"  Width ="750px" Font-Bold="true" Font-Italic="true" Font-Size="Small"
+                                                        Font-Names="viladimir script" ForeColor="Red" Visible="true"></asp:Label></span>
+</p>
+            
+                        </td>
+                    </tr>--%>
+                    <tr>
+                                                   <td align="left" >
+       <%--                                                                         <asp:ImageButton ID="Signup" runat="server" ImageUrl="~/Images/Signup.jpg" 
+                                Height="22px"  Width ="45px"  />--%>
+                                                    <asp:Label ID="Label1" runat="server" Text="                                                     "  Height="25px"  Width ="300px" Font-Bold="true" Font-Italic="true" Font-Size="Small"
+                                                        Font-Names="viladimir script" ForeColor="#cc6699" Visible="true"></asp:Label>
+
+                                
+                        </td>
+                        <td >
+
+<%--                            <asp:ImageButton ID="LoginImage" runat="server" ImageUrl="~/Images/LoginImage.jpg" 
+                                Height="25px"  Width ="50px" />--%>
+                            <asp:LinkButton ID="Login" runat="server" Text="Login"  Height="20px"  Width ="50px"  ForeColor="#cc6699" style="text-decoration: none" OnClick="Login_Click"  Font-Size="Small" Font-Bold="true"></asp:LinkButton>
+                            <asp:LinkButton ID="Logout" runat="server" Text="Logout"  Height="20px"  Width ="50px"  ForeColor="#cc6699" style="text-decoration: none"  OnClientClick="return confirm('Are you sure you want to logout?');" Font-Size="Small" Font-Bold="true" Visible="false" OnClick="Logout_Click"></asp:LinkButton>
+                                
+                        </td >
+                                               <%--<td align ="center" Height="25px"  Width ="50px">--%>
+                        <td align="right">
+                          <asp:Label ID="Pipeline" runat="server" Text="|"  Height="25px"  Width ="5px" ForeColor="#cc6699"></asp:Label>
+                                
+                        </td>
+                                                <td align="Left" >
+       <%--                                                                         <asp:ImageButton ID="Signup" runat="server" ImageUrl="~/Images/Signup.jpg" 
+                                Height="22px"  Width ="45px"  />--%>
+                                                    <asp:LinkButton ID="Signup" runat="server" Text="Signup"  Height="20px"  Width ="50px"  ForeColor="#cc6699" style="text-decoration: none; text-align:left" Font-Size="Small" Font-Bold="true" OnClick="Signup_Click"></asp:LinkButton>
+                                                    <asp:LinkButton ID="lnkProfile" runat="server" Text="Profile"  Height="20px"  Width ="50px"  ForeColor="#cc6699" style="text-decoration: none; text-align:left" Font-Size="Small" Font-Bold="true"  OnClientClick="return true;" Visible="false" OnClick="lnkProfile_Click"></asp:LinkButton>
+                                                    
+
+                                
+                        </td>
+                                                <td align="right">
+                          <%--<asp:Label ID="Pipeline1" runat="server" Text="|"  Height="25px"  Width ="5px" ForeColor="#cc6699" Visible="false"></asp:Label>--%>
+                                
+                        </td>
+                        <td align="Left" >
+                            <%--<asp:LinkButton ID="lnkChangePassword" runat="server" Text="Change Password"  Height="20px"  Width ="200px"  ForeColor="#cc6699" style="text-decoration: none; text-align:left" Font-Size="Small" Font-Bold="true"  OnClientClick="return true;" Visible="false" OnClick="lnkChangePassword_Click"></asp:LinkButton>--%>
+                        </td>
+                    </tr>
+                    
+                </table>
+   
+              </div>
+
+        </div>
+
+<div style="clear: both;" runat="server" id="dvUserMenu">
+<div style="position: relative; float: left; width: 1003px; top: 0px; right: -53px; text-align:left; height: 20px;">
+              
+      <%--        <asp:LinkButton ID="lnkHome" runat="server" onclick="lnkHome_Click"  Font-Size="XX-Large" Width ="100px" >Home</asp:LinkButton>
+               <asp:LinkButton ID="lnkMyCart" runat="server" onclick="lnkMyCart_Click"  Font-Size="XX-Large" Width ="135px" >My Cart</asp:LinkButton>
+                  
+                <asp:LinkButton ID="lnkMyOrder" runat="server" onclick="lnkMyOrder_Click" Font-Size="XX-Large" Width ="150px" >My Order</asp:LinkButton>
+                <asp:LinkButton ID="lnkOurProducts" runat="server"  Font-Size="XX-Large" 
+                      Width ="216px" onclick="lnkOurProducts_Click" >Our Products</asp:LinkButton>
+          <asp:LinkButton ID="lnkContactUs" runat="server" onclick="lnkContactUs_Click" Font-Size="XX-Large" Width ="180px" >Contact Us</asp:LinkButton>
+             
+                    <asp:LinkButton ID="lnkLogout" runat="server" onclick="lnkLogout_Click" Font-Size="XX-Large" Width ="120px" >Logout</asp:LinkButton>
+                 --%>
+ <table style="width: 100%;" >
+  <tr>
+              
+                        <td >
+                            <asp:LinkButton ID="lnkHome" runat="server" Text="Home"  Height="25px"  Width ="50px" ForeColor="Black" style="text-decoration: none;font-size:medium;" OnClick="lnkHome_Click"></asp:LinkButton>
+                        </td >
+                                               
+                        <td>
+                          <asp:LinkButton ID="lnkMyCart" runat="server" Text="MyCart"  Height="25px"  Width ="50px" ForeColor="Black" style="text-decoration: none;font-size:medium;" OnClick="lnkMyCart_Click"></asp:LinkButton>
+                            <asp:LinkButton ID="lnkProduct" runat="server" Text="Products"  Height="25px"  Width ="50px" ForeColor="Black" style="text-decoration: none;font-size:medium;" OnClick="lnkProduct_Click" Visible="false"></asp:LinkButton>
+                        </td>
+                                                <td >
+                                                     <asp:LinkButton ID="lnkMyOrder" runat="server" Text="MyOrder"  Height="25px"  Width ="50px" ForeColor="Black" style="text-decoration: none;font-size:medium;" OnClick="lnkMyOrder_Click"></asp:LinkButton>
+                                                    <asp:LinkButton ID="lnkOrders" runat="server" Text="Orders"  Height="25px"  Width ="50px" ForeColor="Black" style="text-decoration: none;font-size:medium;" Visible="false" OnClick="lnkOrders_Click"></asp:LinkButton>
+                        </td>
+                                                <td>
+                          <asp:LinkButton ID="lnkOurProducts" runat="server" Text="OurProducts"  Height="25px"  Width ="50px" ForeColor="Black" style="text-decoration: none;font-size:medium;" OnClick="lnkOurProducts_Click"></asp:LinkButton>
+                                <asp:LinkButton ID="lnkInvoices" runat="server" Text="Invoices"  Height="25px"  Width ="50px" ForeColor="Black" style="text-decoration: none;font-size:medium;" Visible="false" ></asp:LinkButton>
+                        </td>
+                                                                        <td>
+                          <asp:LinkButton ID="lnkStatus" runat="server" Text="Status"  Height="25px"  Width ="50px" ForeColor="Black" style="text-decoration: none;font-size:medium;" OnClick="lnkStatus_Click"></asp:LinkButton>
+                               <asp:LinkButton ID="lnkUsers" runat="server" Text="Users"  Height="25px"  Width ="50px" ForeColor="Black" style="text-decoration: none;font-size:medium;" Visible="false" OnClick="lnkUsers_Click"></asp:LinkButton> 
+                        </td>
+                                                
+                                                                        <td>
+                          <asp:LinkButton ID="lnkFeedback" runat="server" Text="Feedback"  Height="25px"  Width ="50px" ForeColor="Black" style="text-decoration: none;font-size:medium;" OnClick="lnkFeedback_Click"></asp:LinkButton>
+                                
+                        </td>
+                                                                                              <td>
+                          <%--<asp:LinkButton ID="lnkContactUs" runat="server" Text="ContactUs"  Height="25px"  Width ="50px" ForeColor="Black" style="text-decoration: none;font-size:medium;"></asp:LinkButton>--%>
+                                
+                        </td>
+                    </tr>
+                    
+                </table>
+          
+            </div>
+  
+        </div>
+          <div style="clear: both;">
+        <div style="position: relative; float: left; width: auto;top: 0px; right: -50px; ">
+        
+          <table  frame="void" >
+        	<tr align="center" >
+		<%--<td width="1235" height="1" colspan="3" align ="left"  >--%>
+			<%--<img src="images/08.jpg" height="174" alt="" align="left"  
+                style="width: 1235px">--%><%--</td>--%>
+                
+                     <td width="1175" height="0" colspan="3" align ="center" 
+                    style="background-color:#cc6699; color:White;font-family: Arial; font-size: small;">
+                      </td>                
+	</tr>
+	</table>
+        </div>
+        </div>
+            
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

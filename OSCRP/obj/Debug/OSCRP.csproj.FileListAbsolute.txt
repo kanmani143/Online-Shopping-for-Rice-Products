@@ -1,0 +1,8 @@
+C:\OSCRP\OSCRP\bin\OSCRP.dll.config
+C:\OSCRP\OSCRP\bin\OSCRP.dll
+C:\OSCRP\OSCRP\bin\OSCRP.pdb
+C:\OSCRP\OSCRP\obj\Debug\OSCRP.csproj.AssemblyReference.cache
+C:\OSCRP\OSCRP\obj\Debug\OSCRP.csproj.CoreCompileInputs.cache
+C:\OSCRP\OSCRP\obj\Debug\OSCRP.csproj.CopyComplete
+C:\OSCRP\OSCRP\obj\Debug\OSCRP.dll
+C:\OSCRP\OSCRP\obj\Debug\OSCRP.pdb

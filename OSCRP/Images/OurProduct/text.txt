@@ -1,0 +1,49 @@
+ Volume in drive C is ACER
+ Volume Serial Number is E445-9A0C
+
+ Directory of C:\NAGA\HaiSia\HaiSia\Images\OurProduct
+
+05/05/2015  03:13 PM    <DIR>          .
+05/05/2015  03:13 PM    <DIR>          ..
+04/05/2015  02:06 PM            64,174 assorted_shellfish.jpg
+04/05/2015  02:06 PM            60,384 baby_squid.jpg
+04/05/2015  02:06 PM            63,154 barred_spanish_mackerel.jpg
+04/05/2015  02:06 PM            49,915 black_mullet.jpg
+04/05/2015  02:06 PM            55,296 black_pomfret.jpg
+04/05/2015  02:06 PM            47,835 chilean_seabass.jpg
+04/05/2015  02:06 PM            61,098 cotton_fish.jpg
+04/05/2015  02:06 PM            50,865 crab.jpg
+04/05/2015  02:06 PM            48,698 crayfish.jpg
+04/05/2015  02:06 PM            62,503 cuttlefish.jpg
+04/05/2015  02:06 PM            60,296 file_fish.jpg
+04/05/2015  02:06 PM            69,403 flower_crab.jpg
+04/05/2015  02:06 PM            63,487 flower_grouper.jpg
+04/05/2015  02:06 PM            49,750 golden_pomfret.jpg
+04/05/2015  02:06 PM            42,555 green_wrasse.jpg
+04/05/2015  02:06 PM            54,338 grouper.jpg
+04/05/2015  02:06 PM            56,946 ikan_parang.jpg
+04/05/2015  02:06 PM            64,727 lobster.jpg
+04/05/2015  02:06 PM            59,211 milk_fish.jpg
+04/05/2015  02:06 PM            69,077 prawns.jpg
+04/05/2015  02:06 PM            54,423 red_grouper.jpg
+04/05/2015  02:06 PM            57,342 red_snapper.jpg
+04/05/2015  02:06 PM            59,237 ribbon_fish.jpg
+04/05/2015  02:06 PM            66,680 salmon.jpg
+04/05/2015  02:06 PM            44,608 sea_bass.jpg
+04/05/2015  02:06 PM            49,154 sea_bream.jpg
+04/05/2015  02:06 PM            43,423 season_fish.jpg
+04/05/2015  02:06 PM            47,976 silver_pomfret.jpg
+04/05/2015  02:06 PM            60,944 snakehead_fish.jpg
+04/05/2015  02:06 PM            56,777 softshell_cuttlefish.jpg
+04/05/2015  02:06 PM            56,123 sole_fish.jpg
+04/05/2015  02:06 PM            50,919 spanish_mackeral.jpg
+04/05/2015  02:06 PM            47,181 squid.jpg
+04/05/2015  02:06 PM            58,436 stingray.jpg
+05/05/2015  03:23 PM                 0 text.txt
+04/05/2015  02:06 PM            49,630 threadfin.jpg
+04/05/2015  02:06 PM            47,344 tilapia.jpg
+04/05/2015  02:06 PM            46,182 white_pomfret.jpg
+04/05/2015  02:06 PM            47,560 yellow_croaker.jpg
+04/05/2015  02:06 PM            52,872 yellowtail.jpg
+              40 File(s)      2,150,523 bytes
+               2 Dir(s)  424,162,873,344 bytes free
